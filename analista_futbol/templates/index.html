@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Analista de Fútbol</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Analista de Partidos de Fútbol</h1>
+
+    <h2>Partidos Registrados</h2>
+
+    <table>
+        <tr>
+            <th>Local</th>
+            <th>Visitante</th>
+            <th>Marcador</th>
+        </tr>
+        {% for match in partidos %}
+        <tr>
+            <td>{{ match.home }}</td>
+            <td>{{ match.away }}</td>
+            <td>{{ match.home_goals }} - {{ match.away_goals }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="/stats">Ver estadísticas</a>
+</div>
+
+</body>
+</html>

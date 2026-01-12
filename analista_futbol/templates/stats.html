@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Estadísticas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Estadísticas Generales</h1>
+
+    <div class="stats-box">
+        <div class="stat-card">
+            <h3>Partidos</h3>
+            <p>{{ stats.total }}</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Victorias Local</h3>
+            <p>{{ stats.home_wins }}</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Empates</h3>
+            <p>{{ stats.draws }}</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Victorias Visita</h3>
+            <p>{{ stats.away_wins }}</p>
+        </div>
+    </div>
+
+    <h2>Probabilidades estimadas</h2>
+    <ul>
+        <li>Victoria Local: {{ stats.probabilities.local }}%</li>
+        <li>Empate: {{ stats.probabilities.empate }}%</li>
+        <li>Victoria Visita: {{ stats.probabilities.visita }}%</li>
+    </ul>
+
+    <a href="/">⬅ Volver</a>
+</div>
+
+</body>
+</html>
