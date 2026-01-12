@@ -1,4 +1,4 @@
-#Analista de Partidos de Fútbol
+# Analista de Partidos de Fútbol
 
 Aplicación web sencilla desarrollada con **Flask** que permite registrar y visualizar partidos de fútbol, además de generar estadísticas básicas y probabilidades de resultado (local, empate, visita).
 
@@ -6,7 +6,7 @@ El proyecto tiene un diseño moderno con temática futbolera y está pensado con
 
 ---
 
-##Funcionalidades (Futuras)
+## Funcionalidades (Futuras)
 
 - Visualización de partidos registrados
 - Cálculo automático de:
